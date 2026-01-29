@@ -69,6 +69,7 @@ export const ArticleParamsForm = ({
 		setFormState(defaultArticleState); // Сбрасываем локально в форме
 		setArticleState(defaultArticleState); // Сбрасываем глобально в статье
 	};
+	
 
 	return (
 		<div ref={formRef}>
