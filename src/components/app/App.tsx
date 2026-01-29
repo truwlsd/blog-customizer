@@ -1,16 +1,13 @@
 import { useState, CSSProperties } from 'react';
 
-// Импортируем компоненты из соседних папок в components/
 import { Article } from '../article/Article';
 import { ArticleParamsForm } from '../article-params-form/ArticleParamsForm';
 
-// Импортируем константы (поднимаемся на 2 уровня выше: app -> components -> src)
 import {
 	defaultArticleState,
 	ArticleStateType,
 } from '../../constants/articleProps';
 
-// Импортируем стили (путь к глобальным стилям или модулям)
 import styles from '../../styles/index.module.scss';
 
 export const App = () => {
@@ -19,7 +16,7 @@ export const App = () => {
 
 	return (
 		<main
-			className={styles.main} // ИСПРАВЛЕНО: убрали clsx для статичного класса
+			className={styles.main}
 			style={
 				{
 					'--font-family': articleState.fontFamilyOption.value,
